@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Environment & secrets
+.venv/
+.env
+
+# Data & models (DVC will manage these)
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+*.parquet
+*.csv
+models/
+
+# MLflow local runs
+mlruns/
+mlartifacts/
+
+# Notebooks & IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/

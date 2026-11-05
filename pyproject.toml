@@ -1,0 +1,32 @@
+[project]
+name = "air-pulse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AshutoshP29", email = "ashu2005avi@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pandas>=3.1.1",
+    "pandera>=0.35.0",
+    "pyarrow>=26.0.1",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+air-pulse = "air_pulse:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "dvc>=3.67.1",
+    "ipykernel>=7.4.0",
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
